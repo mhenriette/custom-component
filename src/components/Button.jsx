@@ -5,9 +5,10 @@ const Button = ({ number }) => {
         alert(`Clicked button ${number}`)
     }
 
-    return <div className="btn_container">
+    return (<div className="btn_container">
         <button className="btn" onClick={handleClick}>{`Button ${number}`}</button>
-    </div>;
-};
+    </div>
+    );
+}
 
 export default Button;
